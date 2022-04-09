@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Island - Installations</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <script>
+      function init()
+			{
+				setInterval(OnDraw, 60);
+			}
+
+            var time = 0;
+			var color = "#fff";
+			
+			function OnDraw()
+			{
+				time = time + 0.2;
+				var canvas = document.getElementById("mycanvas");
+				var dataLine = canvas.getContext("2d");
+			  var value = document.getElementById("lineWidth");
+				
+				dataLine.clearRect(0, 0, canvas.width, canvas.height);
+				
+				dataLine.beginPath();
+				for(cnt = -1; cnt <= canvas.width; cnt++)
+				{
+					dataLine.lineTo(cnt, canvas.height * 0.5 - (Math.random() * 2 + Math.cos(time + cnt * 0.05) * 20 ));
+				}
+				
+				//dataLine.lineWidth = value.value * 0.1;
+				dataLine.strokeStyle = color;
+				dataLine.stroke();
+			}
+
+init();
+      </script>
+    <div id="navbar"> 
+      <ul> 
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="workshops.html">Workshops</a></li> 
+      <li><a href="cv.html">About the team</a></li> 
+      <li><a href="#contact">Contact</a></li> 
+      </ul> 
+    </div> 
+    
+    <div id="install" class='section'>
+      <h1 class='center-align'>Installations</h1>
+      <div class='center-align'> 
+        <canvas  id="mycanvas"></canvas>
+      </div>
+      <p><b>Camouflage</b> by Roee Cohen</p>
+      <p>Once it was used as a decoy to save the capital from Soviet bombs. Later, it had its toxic landfill covered to save residents’ health.  Camouflage seems to shape the history of Vuosaari. Nature gardener Jukka Toivonen, the initiator of the dump rehabilitation, mentions that “...in 30 years’ time one will no longer notice that human activity has been involved in the creation of the area.” As the known pun about Finland suggests, Vuosaari may fluctuate between appearing as a rapidly developing urban district and yet entirely indiscernible.
+      </p>
+      <p>Inkjet Print on Fabric</p>
+      <div class="container">
+        <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top">
+            <img src="./images/roe-min.JPG" alt="installation pic">
+          </div>
+          <div class="image-stack__item image-stack__item--bottom">
+            <img src="./images/roe2-min.JPG" alt="installation pic">
+          </div>
+        </div>
+      </div>
+      <p><b>Conform</b> by Otso Havanto</p>
+      <p>Conform refers to something taking a similar form, nature or character as another entity. A related word, conformity, is the act of matching attitudes, beliefs, and behaviors to group norms or politics – following rules and fitting in. In the installation, the abstract cell-like entities react to their surroundings by adapting their form and reflecting the environment. With this metaphor the installation considers our needs as humans to conform with our surroundings. Also, as the presence of an observer is affecting the dynamics of the installation, the installation studies our intentional and unintended influence to the implicit rules dictating group and societal norms.<br /><br />
+      
+        <a class='link' href="https://otsohavanto.net/conform/" target="_blank">Link for more info</a>
+      </p>
+      <p>Interactive installation: computer graphics, motion sensor, CRT-monitors</p>
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/393545106' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      <div class="container">
+        <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top">
+            <img src="./images/otso2-min.JPG" alt="installation pic">
+          </div>
+          <div class="image-stack__item image-stack__item--bottom">
+            <img src="./images/otso1-min.JPG" alt="installation pic">
+          </div>
+        </div>
+      </div>
+      <p><b>WORLD-WIDE-WAVE</b> by [Konvolv_] Camilo Sanchez, Liisi Soroush, enue & John Lee</p>
+      <p>
+        This installation gathers around the stories depicting the identity of people, all and each one of them keen to maritime lifestyles. Its physical
+        structures invite the visitor to immerse oneself within the installation synchronized with gestures of the audience, those weaving into a form of
+        light and sound portraying the life around and among these giant waters. <br /><br />
+        
+        <a class='link' href="https://konvolv.com/world-wide-wave" target="_blank">Link for more info</a>
+      </p>
+      <p>Posenet, servomotor, arduino, fishing net, Instagram scraping, supercollider</p>
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/404926614' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      <div class="container">
+        <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top">
+            <img src="./images/w2-min.JPG" alt="installation pic">
+          </div>
+          <div class="image-stack__item image-stack__item--bottom">
+            <img src="./images/w1-min.JPG" alt="installation pic">
+          </div>
+        </div>
+      </div>
+      <p><b>EPHYRA</b> by Niko Tiainen</p>
+      <p>EPHYRA is shape changing artificial creature based on algorithm and recorded generative visuals.<br />
+        Soundscape of the artwork creates a rising tension thru whole piece and makes big contrast between the visuals and sound. <br />
+        For myself artwork represents some kind of paradox between beauty and calmness in restless environment.        
+      </p>
+      <p>One channel video installation with stereo sound. Duration 13,57 min. </p>
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/rdj0GPDqXgM' frameborder='0' allowfullscreen></iframe></div>
+      <div class="container">
+        <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top">
+            <img src="./images/n1-min.JPG" alt="installation pic">
+          </div>
+          <div class="image-stack__item image-stack__item--bottom">
+            <img src="./images/n2-min.JPG" alt="installation pic">
+          </div>
+        </div>
+      </div>
+      <p><b>Underwater</b> by Mirya Nezvitskaya & Anze Bratus</p>
+      <p>“Underwater” installation shows the three stages of the rising water levels: the past, the present and the future. Through sonic and visual immersion experience how the water will rise, if we don’t act accordingly to the current environmental crisis. What can we do so we would not end up underwater?
+      </p>
+      <p>Audiovisual perceptual installation</p>
+      <div class="container">
+        <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top">
+            <img src="./images/m2-min.JPG" alt="installation pic">
+          </div>
+          <div class="image-stack__item image-stack__item--bottom">
+            <img src="./images/m1-min.JPG" alt="installation pic">
+          </div>
+        </div>
+      </div>
+      <p><b>Bob on the beach</b> by Shreyasi Kar & Matti Niinimäki</p>
+      <p>Bob is an algae that lives in Aurinkolahti, Vousaari. The 3 flipbooks capture 3 moments from Bob's life. Bob eats. Bob multiplies. Bob dies.
+      </p>
+      <p>Mechanical flipbooks, distance sensor</p>
+      <div class="container">
+        <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top">
+            <img src="./images/b1-min.JPG" alt="installation pic">
+          </div>
+          <div class="image-stack__item image-stack__item--bottom">
+            <img src="./images/b2-min.JPG" alt="installation pic">
+          </div>
+        </div>
+      </div>
+      <p><b>Blow-a-Vuo</b> by Ameya Chikramane & enue</p>
+      <p>The simplest way to think of flux is “how much air goes through the net”. This experience connects the viewer to Vuosaari through their breath.
+      </p>
+      <p>HAP encoded interactive video created using openFrameworks, Apple Mac Mini, Screen, Shure mic, Voxicon headphones</p>
+      <div class="center-align">
+        <video controls width="30%">
+          <source src="/images/blow.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top">
+            <img src="./images/bv2-min.JPG" alt="installation pic">
+          </div>
+          <div class="image-stack__item image-stack__item--bottom">
+            <img src="./images/bv1-min.JPG" alt="installation pic">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class='section'>
+      <h1 class='center-align'>Contact</h1>
+      <p class='center-align'>
+        matti.niinimaki@aalto.fi <br />
+        info@krrnk.com<br />
+        liisi.soroush@aalto.fi<br />
+        emily.wingren@aalto.fi (for Ääniaalto)
+      </p>
+    </div>
+    <div id='footer'>
+      <a href='http://www.vuotalo.fi'><img class='images' src='./images/logo-helsinki.png'/></a>
+      <a href='https://www.aalto.fi/en/school-of-arts-design-and-architecture'><img class='images' src='./images/aalto_arts.png'/></a>
+      <a href='https://www.aalto.fi/en/aalto-media-lab'><img class='images' src='./images/mlab2.png' /></a>
+      <a href='https://dada.ayy.fi'><img class='images' src='./images/dada.png' /></a>
+    </div>
+  </body>
+</html>
