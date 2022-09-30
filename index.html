@@ -1,58 +1,295 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
     <title>Flux Island</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
-    <script src="sketch.js"></script>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-  </head>
-  <body>
-    <div id="navbar"> 
-      <ul> 
-      <li><a href="#description">About</a></li> 
-      <li><a href="#contact">Contact</a></li> 
-      <li><a href="./2020/">2020</a></li> 
-      </ul> 
-    </div> 
-    <div id="sketch-holder">
-      <div id="p5_loading" class="loadingclass">Loading in flux...</div>
-      <!-- Our sketch will go here! -->
-    </div>
-    <div id="description" class='section'>
-      <h1 class='center-align'>About</h1>
-      
-      <p class="center-align">15.09.–8.10.2022 <br />
-        Vuotalo Galleria<br />
-        Mosaiikkitori 2, Helsinki<br />
-        Free entry
-      </p>
+    <script src="index.js"></script>
+</head>
+<body>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#wave" x="48" y="0" stroke="#fff" stroke-width="0.225" fill-opacity="0" />
+            <use xlink:href="#wave" x="48" y="3" stroke="#bbb" stroke-width="0.225" fill-opacity="0" />
+            <use xlink:href="#wave" x="48" y="5" stroke="#ddd" stroke-width="0.225" fill-opacity="0" />
+            <use xlink:href="#wave" x="48" y="7" stroke="#888" stroke-width="0.225" fill-opacity="0" />
+        </g>
+    </svg>
+    <div class="wrapper">
+        <div></div>
+        <div class="content">
+            <h1><span class="animate1">FLUX</span> <span class="animate2">ISLAND</span></h1>
 
-      <p>
-        A direct translation of the word Vuosaari, Flux Island combines the figurative and literal. Flux as in flow of people, ideas, electricity, water, etc. and flux as in the substance used when soldering. Flux Island is a collaboration between Aalto Media Lab and Vuotalo gathering an exhibition, workshops, and audiovisual performances.
-      </p>
-   
-      <p>Aalto Media Lab at the Department of Media at Aalto University offers interdisciplinary studies in the design and production of new media, games, and sound. The mission of the Media Lab is to explore, discover, and comprehend digital technology and its impact on society.
-      </p>
-      <br /><br />
-      <p class='center-align'>
+            <div class="schedule">
+                <p>15 September - 8 October</p>
+                <p><a href="https://www.vuotalo.fi/en/contact-information#getting-there" target="_blank">Vuotalo</a></p>
+            </div>
 
-      </p>
+            <div class="description">
+                <h2>About</h2>
+
+                <p><span class="highlight1">Flux Island</span> is an annual exhibition produced by Department of Art and Media students at Aalto University. The exhibition lasts for three weeks featuring ten artworks and installations from 14 students and alumni.</p>
+
+                <p>A direct translation of the word 'Vuosaari', <span class="highlight1">Flux Island</span> combines the figurative and literal. Flux as in flow of people, ideas, electricity, water, etc. and flux as in the substance used when soldering.</p>
+
+                <p>The theme this year is "<span class="highlight1">ECHO-systems</span>", to be understood as reflection of energies and pulses in an environment. Delays, different densities, changes in temperature and pressure might create illusions of ECHO-systems. Depending on the assemblages we make, we can enable interaction between each of these parts. How can we create ECHO-systems that highlight communication? How can different ECHO-systems function together enhancing sustainability?</p>
+            </div>
+
+            <div>
+                <h2>Works</h2>
+
+                <div class="project-desc" id="milzucina">
+                    <div>
+                        <img src="img/artists/milzucina2.webp" class="img-smaller">
+                    </div>
+                    <div class="project-text">
+                        <a href="#milzucina"><p class="artists-project highlight2">Milžu cīņa, milžu spēle</p></a>
+
+                        <p>Two boys come across a football and some space to play. Despite rough ground and distant storms, their eyes light up and the game is on. They are giants, capable of anything; the stakes are high, each kick amplified, every goal extraordinary.</p>
+
+                        <p>Inspired by Dzeltenie Pastnieki’s song Milžu cīņa, this table football game has been physically and sonically augmented to express the expanded universe of children’s playtime. We invite you to play and get lost in your own youthful spirit.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="aat">
+                    <div class="artists-img">
+                        <img src="img/artists/aat.webp">
+                    </div>
+                    <div class="artists-text">
+                        <a href="#aat"><p class="artists-by">by</p><h2 class="highlight3">A-A-T</h2></a>
+                        <p>Antoni, Aaron and Teodors are a trio of Acoustics and Audio Technology students at Aalto University. They are united by a common love for music and bring diverse backgrounds spanning electronics, programming, and engineering.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="profundo">
+                    <div>
+                        <img src="img/artists/profundo.webp" class="img-smaller">
+                    </div>
+                    <div class="project-text">
+                        <a href="#profundo"><p class="artists-project highlight2">Profundo</p></a>
+
+                        <p>The work constitutes of infinite reflections of the observer, inheriting the distortions of the moment and stretching into the depths of the canvas, creating a generative composition based on the delay of the projection. All the sounds of the observer are echoed back, the tone and pitch altered.</p>
+
+                        <p>The light we see are echoes from the Sun’s future. Echoes that reach us in his past. Rays bouncing off and through the objects to finally realize our vision. And a mirror recurses this phenomenon, echoing our image back to us. Mirrors seeing mirrors, multiplying our existence in this very moment, remind us of the constant now that we live in.</p>
+
+                        <p>Everything we sense is a relict, fractions of seconds old - the time it takes for the waves to reach our eyes and ears, and for our brains to understand it. This phenomenon is exacerbated by the projection delay, offsetting the experience of the past into the future. Reminding us, that the next moment is in fact the reflection of the history, decaying, distorting, and changing as soon as we experience it.</p>
+
+                        <p>Are the images constituting you or are they part of you as they are part of the memory of yourself? Are we three-dimensional entities or should we understand the temporal persistence of our bodies as extensions through space? We are not remembering every move we make yet we claim there is an overarching identity to all of the captures. But most of them will be lost and the self will turn out to be a very barebones story, lacking the richness of our experience.</p>
+
+                        <p>There are moments when we realize how strange it is to know ourselves. Looking at the unsurmountable and inconceivable richness of our lives, how can we make sense of it, and create a finite, comprehensive, yet impressive narrative. How can we do it from the inside, confined by the sensory input and our physique? Like hearing your own voice recorded and echoing back to you when you play it. How possibly can I know all that, when I don’t even know what my voice sounds like from outside my head?</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="margocalvin">
+                    <div class="artists-img">
+                        <img src="img/artists/margo.webp"></img>
+                        <img src="img/artists/calvin.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#margocalvin"><p class="artists-by">by</p><h2 class="highlight3">Margo Nowicka &</br>Calvin Guillot</h2></a>
+                        <p>Margo Nowicka structures her work in generative programming and animation along two directions. Inwards is the revision of feelings, examination of psychological and social struggles. Outwards is an affirmation, appreciation of beauty that steers the attention off the conundrums inside.</p>
+
+                        <p>Calvin Guillot's work is focused on the exploration of the self, both from and external and internal point of view. He is interested in creating and discovering new ways to interact with our own thoughts, and the spaces both in and out of our minds, in which these thoughts operate.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="nottobereproduced">
+                    <div>
+                        <img src="img/artists/nottobereproduced.webp" class="img-smaller">
+                    </div>
+                    <div class="project-text">
+                        <a href="#nottobereproduced"><p class="artists-project highlight2">Not To Be Reproduced</p></a>
+
+                        <p>How sure are you about the image that comes from the mirror is you? Are you sure that a camera is the most accurate reflection of you? 1 photo - free + Extra photo - 2 euros.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="carlos">
+                    <div class="artists-img">
+                        <img src="img/artists/carlos.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#carlos"><p class="artists-by">by</p><h2 class="highlight3">Carlos D. Pérez</h2></a>
+                        <p>Carlos Daniel Perez Moreno is a new media artist. His artwork is mainly interactive installations, and their main topic is an exploration of personal image construction, self-reflection, and social media. As a medium, he uses electronic interaction between the public and the artwork, with a lo-fi and popular DIY aesthetic. His approach to his installations is playful and silly, however, with some criticism.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="pondering">
+                    <div>
+                        <img src="img/artists/pondering.webp" class="img-smaller">
+                    </div>
+                    <div class="project-text">
+                        <a href="#pondering"><p class="artists-project highlight2">Pondering</p></a>
+
+                        <p>Pondering is an interactive projected installation that encourages participants to lay back, relax, and push on a canopy above to change the water-themed visuals and audio. The magnetic lily pads can be picked up with the fishing rod, and reflective stones skipped on the surface. Take a break and escape into a tranquil world of water, nature, and synths.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="embodies">
+                    <div class="artists-img">
+                        <img src="img/artists/embodies.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#embodies"><p class="artists-by">by</p><h2 class="highlight3">Embodies</h2></a>
+                        <p>Embodies is a collaboration between Aalto New Media students Katie Ballinger, Ida Budolfsen, Panu Luukkonen, and Monika Hauck. Together they forged their collective interests in exploring alternative formats for interactive installation using responsive audio and immersive visuals.They are interested in re-framing engagement with the natural world and generating environs for reflection, meditation, and inspiration.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="soundsoflight">
+                    <div>
+                        <!-- <img src="img/artists/soundsoflight.webp" class="img-smaller"> -->
+                    </div>
+
+                    <div class="project-text">
+                        <a href="#soundsoflight"><p class="artists-project highlight2">Sounds of Light Signals</p></a>
+
+                        <p>It is a combination of two signals by converting light signals into a soundwave. My task is to design these signals into something else. As for light, substitute amplitude as brightness and frequencies as color. As for sound, the volume is amplitude, and pitch is frequency. Following these factors, you can enter brightness to modulate the volume and RGB data to control pitch. In that way, two different signals communicate with the very same wave.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="hyunjikim">
+                    <div class="artists-img">
+                        <img src="img/artists/hyunjikim.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#hyunjikim"><p class="artists-by">by</p><h2 class="highlight3">Hyunji Kim</h2></a>
+                        <p>Media Artist based in Seoul,  Helsinki currently studying in MA program as multimedia designer at Department of New Media, Aalto University. Interested in Physical Computing and 3D Graphics. Finding a way to combine nature and computing methodology. Ideas are influenced by minimalism and surrealism.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="waves">
+                    <div>
+                        <img src="img/artists/waves.webp" class="img-smaller">
+                    </div>
+
+                    <div class="project-text">
+                        <a href="#waves"><p class="artists-project highlight2">Waves</p></a>
+
+                        <p>Waves is an audiovisual installation where you can play a string instrument that triggers different kinds of visuals. The colors and shapes will be the echoes of the sounds played; how you play the instrument and what chords you play will determine the visual outcome which will be different for every person who plays. This interaction might encourage people to try to play the instrument in different ways and inspire experimentation. The music will also shape the space in which the instrument is placed, creating different atmospheres.</p>
+
+                        <p>For some people, seeing music in a visual representation can help to experience sounds in a new way, when the focus shifts from pure sound to the images that are synced and defined by it. You might start to determine how you play based on not just what you hear but also what you see. The visual patterns will change and different shapes will morph and unify into unexpected and interesting combinations and streams, unique for each player.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="inka">
+                    <div class="artists-img">
+                        <img src="img/artists/inka.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#inka"><p class="artists-by">by</p><h2 class="highlight3">Inka Jerkku</h2></a>
+                        <p>Inka Jerkku is a new media master's student and an artist currently focusing on 3D animation and design, installations, and audio-reactive visuals. VJing at different events is also part of her field of activities. Her style is often clear and colorful, aiming at immersiveness and creating interesting visual narratives through the use of visual cues like symbolism, tones, and abstract effects, also embracing elements like spontaneity and creative collaboration. Many of her works are tools for exploration towards more specific areas of interest, the process revealing the final work and its meanings as well as future topics.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="fatum">
+                    <div>
+                        <img src="img/artists/fatum.webp" class="img-smaller">
+                    </div>
+                    <div class="project-text">
+                        <a href="#fatum"><p class="artists-project highlight2">Fatum</p></a>
+
+                        <p>Fatum (Lat.): "In the eyes of the ancients, your fate was out of your hands - what happened was up to gods and demigods."</p>
+
+                        <p>Fatum is a series of works that explore the continuation of video footage using artificial intelligence. The idea of the used pix2pix algorithm is to try to predict how video footage will continue based on the provided training material.</p>
+
+                        <p>Fatum has a multifaceted relationship with time; such as the evolution and iteration of images. It is a play between frames and image sequences. Fatum’s video clips are fragments: flashes of the microcosm and material essence of trained neural network models, making hidden digital data visible.</p>
+
+                        <p>In Fatum, Hautamäki has conducted research with artificial intelligence using various types of source material: photographs, short video clips, kinetic sculptures, watercolor paintings, and 3D animation. One approach has been the examination of glitches and the imperfection of the AI algorithm. The further development of the algorithm - based on the artist’s ideas - has been provided by Hannu Töyrylä. The project’s works have been previously screened in the Animatricks festival 2021 and Gallery Fikka, Porvoo 2022.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="jukka">
+                    <div class="artists-img">
+                        <img src="img/artists/jukka.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#jukka"><p class="artists-by">by</p><h2 class="highlight3">Jukka Hautamäki</h2></a>
+                        <p>Jukka Hautamäki is a Finnish media artist (MfA), based in Helsinki, Finland. He is working with AI, lens-based media, sound and electronics. The works, are presented in the form of an installation and generative media art works. The installations reflect on the construction and repetition of images. Recent exhibitions include a solo show at Gallery Fikka (2022), Joensuu Art Museum (2021), Gallery MUU (2020), Gallery Forum Box (2018).</p>
+                        
+                        <p>His works and collaborations  have been featured in SuperCollider gallery in Los Angeles, NeurIPS Creativity Workshop in Montreal, HIAP, Mustarinda, Field_Notes by Bio Art Society, AAVE Festival, RIXC Festival in Riga, Pixelache Festival, Mansedanse Festival, Animatricks Festival, Helsinki Festival, HORSEANDPONY Fine Arts in Berlin, Kunsthalle Helsinki, Skaftfell Center for Arts Project Space in Seydisfjordur, Avatar Center in Quebec and SIM in Reykjavik.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="shimmeringwhispers">
+                    <div>
+                        <img src="img/artists/shimmeringwhispers.webp" class="img-smaller">
+                    </div>
+                    <div class="project-text">
+                        <a href="#shimmeringwhispers"><p class="artists-project highlight2">Shimmering Whispers</p></a>
+
+                        <p>Cold, dark, and floating through the deep of the ocean. Images of marine life are accessible to us through recordings of their existence, as something often seen not touched. These ancient creatures have an existence far from our world, yet just next door. I wanted to bring this beauty from the sea to our own landscape, mimicking the bioluminescent glow, the gentle swaying, and allowing them to be touched without fear of a sting.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="katie">
+                    <div class="artists-img">
+                        <img src="img/artists/katie.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#katie"><p class="artists-by">by</p><h2 class="highlight3">Katie Ballinger</h2></a>
+                        <p>Katie B is a Canadian New Media artist based in Helsinki. Their works range from traditional arts and crafts to creative programming and electronics. They like to experiment with many mediums and find interesting cross-overs between them, often in physical works, interactive installations, and occasionally performances. They bring their backgrounds in traditional arts, digital fabrication, and programming together to create unique experiences and displays.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="iridescent">
+                    <div>
+                        <img src="img/artists/iridescent.webp" class="img-smaller">
+                    </div>
+
+                    <div class="project-text">
+                        <a href="#iridescent"><p class="artists-project highlight2">Iridescent</p></a>
+
+                        <p>This work begins with a sense of awe for the rainbow. We sometimes keep the moment when we encounter an unexpected rainbow or a cloud of iridescence into a special memory. The radiant light appears the moment we recognize it and then suddenly vanishes at some point. This ephemeral aspect allows us to hold the harmonized light into the unique memory based on time and space, allowing the iridescence has an aura.</p>
+
+                        <p>Some people sense an iridescent aura in us humans. The aura is the atmosphere from the human presence's energy. The energy is expressed by the gestures and movements that human acts. As a result, the unleashed energy creates a flow of colors. The colors cannot always remain the same because the energy constantly flows. Even more, when the energies with the diverse traits meet and harmonize with one another, the serendipitous hues will emerge.</p>
+
+                        <p>Humans are apt to allow the moments that we feel, perceive, say, and act to pass us by transitorily. In other words, we cannot fully sense the temporal energies. Nevertheless, within the space in this work Iridescent, imagine a bit more calmly, perceive the harmonized colorful lights from our bodies, and further, sense the iridescent colors that are mingled by accident by meeting with others.</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="yoona">
+                    <div class="artists-img">
+                        <img src="img/artists/yoona.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#yoona"><p class="artists-by">by</p><h2 class="highlight3">Yoona Yang</h2></a>
+                        <p>I am a multi-disciplinary designer and media artist, studying and working in Espoo, Finland, and I was born in the Republic of Korea. As an artist who creates artworks, and a design researcher based on media technology, I am inspired by nature and create artifacts using digital technology. Because I reside at a crossroads between nature and digital media, I am constantly exposed to both optimistic and pessimistic aspects of media technology. As a media artist, I try to keep observing these aspects of everyday life as a starting point for a new artistic practice to find the balance and the coexisting ambivalence.</p>
+                    </div>
+                </div>
+
+                <div class="project-desc" id="lagoon">
+                    <div>
+                        <img src="img/artists/lagoon.webp" class="img-smaller">
+                    </div>
+                    <div class="project-text">
+                        <a href="#lagoon"><p class="artists-project highlight2">Lagoon</p></a>
+
+                        <p>Lagoons are a transformation point between land and sea where a unique ecosystem adapts to changes out of its geographical nature. In many cases, the transition affected by human actions can be witnessed within a few years of time. The continuing threats from human activities result in environmental impacts; affecting salinity, erosion; the swift changes lead to the breakdown of said lagoons’ ecosystem; damage its biodiversity and increase the threats of floods.</p>
+
+                        <p>Subtle movements with floating visuals projected on the body and repetitive actions emulate the corals. From a visible human figure, glowing in the darkness to merely an illusion until it disappears.</p>
+
+                        <p>Lagoon. Its beauty reflects on its name, and inspires many. While the scene of Emmeline splattering the water under moonlight in the movie The Blue Lagoon(1980) stays in one's mind forever, we cannot help but wonder, will there only be artificial lagoons in the future?</p>
+                    </div>
+                </div>
+
+                <div class="artists-desc" id="yuhsuan">
+                    <div class="artists-img">
+                        <img src="img/artists/yuhsuan.webp"></img>
+                    </div>
+                    <div class="artists-text">
+                        <a href="#yuhsuan"><p class="artists-by">by</p><h2 class="highlight3">Yu-Hsuan Yao</h2></a>
+                        <p>Yu-Hsuan Yao is a Finland-based Taiwanese visual artist, she works primarily with moving images and photography. Yao focuses on merging cultural differences into her art practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
     </div>
-    <div id="contact" class='section'>
-      <h1 class='center-align'>Contact</h1>
-      <p class='center-align'>
-      </p>
-    </div>
-    <div id='footer'>
-      <a href='http://www.vuotalo.fi'><img class='images' src='./images/logo-helsinki.png'/></a>
-      <a href='https://www.aalto.fi/en/school-of-arts-design-and-architecture'><img class='images' src='./images/aalto_arts.png'/></a>
-      <a href='https://www.aalto.fi/en/aalto-media-lab'><img class='images' src='./images/mlab2.png' /></a>
-      <a href='https://dada.ayy.fi'><img class='images' src='./images/dada.png' /></a>
-    </div>
-  </body>
+</body>
 </html>
