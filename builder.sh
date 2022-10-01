@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm -rf _site
+rm -rf public
 
 mkdir public
 mkdir public/img
