@@ -18,3 +18,4 @@ mv style.min.css public/style.css
 cp favicon.png public/favicon.png
 cp img/artists/*.webp public/img/artists
 cp fonts/Poppins-Regular.ttf public/fonts
+cp -a 2020 public/
